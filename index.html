@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <h1><span class="fa fa-star checked"></span> Rock  Paper  Scissor <span class="fa fa-star checked"></span></h1>
+    </header>
+        <div class="score-board">
+            <div id = "user-badge" class="badge">user</div>
+            <div id = "computer-badge"class="badge">computer</div>
+            <span id="user-score">0</span>:<span id="computer-score">0</span>
+        </div>
+        <div class="result">
+            <p>You have 5 rounds</p>
+            <p id="mytext"></p>
+            <p id="msg"></p>
+              <button class="refresh" onclick="refresh()">Play Again</button>
+        </div>
+        <div class="choices">
+            <div class="choice" id="choice_r">
+                <img id= "r" src="images\rock.jpg" alt="rock">
+            </div>
+            <div class="choice" id="choice_p">
+                <img id= "p" src="images\paper.jpg" alt="paper">
+            </div>
+            <div class="choice" id="choice_s">
+                <img id= "s" src="images\scissor.jpg" alt="scissor">
+            </div>
+        </div>
+        <p id="action-message">Make your move</p>
+        <table>
+            <tr>
+                <th></th>
+                <th>Round 1</th>
+                <th>Round 2</th>
+                <th>Round 3</th>
+                <th>Round 4</th>
+                <th>Round 5</th>
+            </tr>
+            <tr>
+                <th>User</th>
+                <td id="user-round1"></td>
+                <td id="user-round2"></td>
+                <td id="user-round3"></td>
+                <td id="user-round4"></td>
+                <td id="user-round5"></td>
+            </tr>
+            <tr>
+                <th>Computer</th>
+                <td id="computer-round1"></td>
+                <td id="computer-round2"></td>
+                <td id="computer-round3"></td>
+                <td id="computer-round4"></td>
+                <td id="computer-round5"></td>
+            </tr>
+        </table>
+        <div id="myModal" class="modal">
+            <div class="result">
+              <!-- <p id="mytext"></p>
+              <button class="refresh" onclick="refresh()">Play Again</button> -->
+            </div>
+        </div>
+        <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
