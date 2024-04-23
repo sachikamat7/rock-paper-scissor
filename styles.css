@@ -9,6 +9,7 @@
 }
 body{
     background-color: rgb(21, 21, 43);
+    height: 100vh;
 }
 header{
     /* font-family: "Sansita Swashed", system-ui; */
