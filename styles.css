@@ -10,6 +10,8 @@
 body{
     background-color: rgb(21, 21, 43);
     height: 100vh;
+    padding: 10px;
+    overflow-x: hidden;
 }
 header{
     /* font-family: "Sansita Swashed", system-ui; */
