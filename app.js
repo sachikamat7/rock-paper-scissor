@@ -13,6 +13,7 @@ const result_div = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+const showResult = document.getElementById("showResult");
 
 function getComputerChoice()
 {
@@ -56,7 +57,7 @@ function insertDataWin()
     document.getElementById(data).innerHTML = 1;
     data = "computer-round"+count;
     document.getElementById(data).innerHTML = 0;
-    if(count === 5)
+    if(count === 3)
         checkWinner();
 }
 function insertDataLose()
@@ -65,7 +66,7 @@ function insertDataLose()
     document.getElementById(data).innerHTML = 0;
     data = "computer-round"+count;
     document.getElementById(data).innerHTML = 1;
-    if(count === 5)
+    if(count === 3)
         checkWinner();
 }
 function wins(userChoice, computerChoice)

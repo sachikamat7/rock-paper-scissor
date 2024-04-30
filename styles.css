@@ -10,8 +10,6 @@
 body{
     background-color: rgb(21, 21, 43);
     height: 100vh;
-    padding: 10px;
-    overflow-x: hidden;
 }
 header{
     /* font-family: "Sansita Swashed", system-ui; */
@@ -86,11 +84,12 @@ img
     height: 100px;
     margin: 20px auto;
     display: block;
+    border-radius: 50%;
 }
 
 .choices
 {
-    margin: 20px 0px;
+    margin: 0px 0px;
     text-align: center;
 }
 .choice
@@ -139,7 +138,7 @@ table
 {
     margin: 20px auto;
     border-collapse: collapse;
-    width: 50%;
+    width: 100px;
     /* border: 2px solid white; */
     color: white;
 }
@@ -165,4 +164,16 @@ th, td
 }
 .refresh:hover{
     color:#FF9811;
+}
+
+main{
+    height: calc(100vh);
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 400px) {
+    table{
+        width: 100px;
+    }
+    
 }
